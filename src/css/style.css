@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+			
+body{
+    background: url(../images/background.png) #FFFCED;
+    font-family: 'Lato', sans-serif;
+    color: #808080;
+}
+
+div{
+    width: 900px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+header{
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 100px;
+    font-family: 'Cookie', cursive;
+    font-weight: normal;
+    color: #FF7164;
+}
+
+h2{
+    font-size:30px;
+    color: #FF9C7E;
+}
+
+h3{
+    font-size: 24px;
+    margin: 0px 0px 5px 0px;
+    color: #FF8664;
+}
+
+h4{
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+}
+
+article{
+    border: 1px dashed #F6EED5;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+footer{
+    text-align: right;
+    color: #CCCCCC;
+}
