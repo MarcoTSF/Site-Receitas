@@ -1,77 +1,56 @@
-<!DOCTYPE html>
-
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Minhas Receitas - Uma página sobre culinária!</title>
-		<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Minhas Receitas</title>
+		<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./src/css/style.css">
 	</head>
+
 	<body>
-		<div>
+		<div class="site" id="site">
 			<header>
-				<h1>Minhas Receitas</h1>
-				<h2>Uma página sobre culinária!</h2>
+				<div class="brand">
+					<div class="logo">MR</div>
+					<div class="site-title">
+						<h1 id="site-title">Minhas Receitas</h1>
+						<p>Uma página sobre culinária!</p>
+					</div>
+				</div>
+
+				<div class="actions">
+					<label class="search" for="search">
+						<svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+							<path d="M15.5 15.5L20 20" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+							<circle cx="11" cy="11" r="6" stroke="#666" stroke-width="2"/>
+						</svg>
+						<input id="search" type="search" placeholder="Pesquisar receitas..." aria-label="Pesquisar receitas">
+					</label>
+				</div>
 			</header>
-			<article>
-				<h3>Biscoito de banana com aveia</h3>
-				<h4>Ingredientes</h4>
-				<ul>
-					<li>2 bananas bem maduras</li>
-					<li>1 xícara de aveia</li>
-				</ul>
-				<h4>Modo de Preparo</h4>
-				<p>
-					Amasse as bananas e acrescente a aveia, misturando bem.<br />
-					Faça bolinhas no formato de pequenos biscoitos e coloque para assar
-					em uma forma untada por 15 minutos em forno pré-aquecido a 175 graus.
-				</p>
-			</article>
-			<article>
-				<h3>Barras de cereal</h3>
-				<h4>Ingredientes</h4>
-				<ul>
-					<li>1 xícara de nozes</li>
-					<li>1 xícara de frutas secas</li>
-					<li>1 xícara de tâmaras secas sem caroço</li>
-				</ul>
-				<h4>Modo de Preparo</h4>
-				<p>
-					Coloque os ingredientes em um processador e bata
-					até que os ingredientes formem uma massa, isso
-					deve acontecer depois de 2 minutos.<br />
-					Coloque uma parte da massa em um pedaço de filme
-					plástico, embrulhe e leve à geladeira por pelo
-					menos uma hora ou durante a noite.<br />
-					Retire a massa da geladeira e corte em pequenos
-					quadrados e guarde na geladeira para conservar.
-				</p>
-			</article>
-			<article>
-				<h3>Pão de queijo (sem fermento)</h3>
-				<h4>Ingredientes</h4>
-				<ul>
-					<li>1 caixinha de creme de leite (200 ml)</li>
-					<li>1 copo de queijo ralado</li>
-					<li>1 copo de polvilho</li>
-				</ul>
-				<h4>Modo de Preparo</h4>
-				<p>
-					Misture todos os ingredientes e amasse
-					até chegar ao ponto de enrolar (soltar das mãos).<br />
-					Faça bolinhas, coloque em uma forma untada e asse em
-					um forno pré-aquecido bem quente.<br />
-					Se achar necessário, acrescente sal. Asse
-					até ficarem douradinhos levemente.
-				</p>
-			</article>
-			<footer>
-				<p>
-					Obrigado por acessar as Minhas Receitas
-				</p>
-			</footer>
+
+			<main>
+				<div class="controls">
+					<div class="filters">
+						<button class="chip" data-filter="Todas">Todas</button>
+						<button class="chip" data-filter="Rápidas">Rápidas</button>
+						<button class="chip" data-filter="Lanches">Lanches</button>
+						<button class="chip" data-filter="Vegetariano">Vegetariano</button>
+					</div>
+
+					<small class="meta" id="countLabel">0 receitas</small>
+				</div>
+
+				<section class="recipes" id="recipes">
+					<!-- cards gerados pelo script.js -->
+				</section>
+			</main>
+
+			<footer>© 2025 - Minhas Receitas. Todos os direitos reservados.</footer>
+
 		</div>
+		
+		<script src="./src/js/script.js"></script>
 	</body>
 </html>
